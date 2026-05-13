@@ -6,18 +6,14 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class DemoAppApplication implements CommandLineRunner  {
+public class DemoAppApplication   {
 
-	@Autowired
-	private Employee e;
+
 
 	public static void main(String[] args) {
 		SpringApplication.run(DemoAppApplication.class, args);
 	}
 
-	public void run(String... args) throws  Exception{
-		System.out.println(e.toString());
-		System.out.println(e.getSalary());
-	}
+
 
 }
